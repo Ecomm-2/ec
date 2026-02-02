@@ -1,0 +1,55 @@
+.site-footer {
+  background: #172337; /* Flipkart dark blue */
+  color: #fff;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  padding: 40px 60px;
+}
+
+.footer-col h4 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #facc15; /* golden accent */
+}
+
+.footer-col p {
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.footer-col a {
+  display: block;
+  color: #d1d5db;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #cbd5f5;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 30px 20px;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+}
+

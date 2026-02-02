@@ -1,0 +1,114 @@
+/* Menu Button */
+.menu-btn {
+  font-size: 30px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Overlay background */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #111;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+/* Active sidebar */
+.sidebar.active {
+  left: 0;
+}
+
+/* Links */
+.sidebar .sidebar-link {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.sidebar a:hover {
+  background: #333;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* =========================
+   MOBILE SIDEBAR ONLY
+========================= */
+@media (max-width: 768px) {
+
+  /* SIDEBAR */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -80%;
+    width: 80%;          /* ✅ NOT FULL PAGE */
+    max-width: 300px;    /* safety */
+    height: 100vh;
+    background: #111;
+    padding-top: 56px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-radius: 0 16px 16px 0; /* 👌 nice edge */
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* OVERLAY */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 999;
+  }
+
+  /* LINKS */
+  .sidebar .sidebar-link {
+    padding: 16px 22px;
+    font-size: 16px;
+  }
+
+  /* CLOSE BUTTON */
+  .close-btn {
+    top: 14px;
+    right: 18px;
+    font-size: 24px;
+  }
+}
+
+
+/* =========================
+   DESKTOP: DISABLE SIDEBAR
+========================= */
