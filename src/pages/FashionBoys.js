@@ -10,14 +10,14 @@ function Fashionboys(){
       <img src="/product1.jpg" alt="product" />
       <h3>Product Name</h3>
       <p className="price">₹1,299</p>
-      <a href="#" className="buy-btn">View on Flipkart</a>
+      {/* <a href="#" className="buy-btn">View on Flipkart</a> */}
     </div>
 
     <div className="product-card">
       <img src="/product2.jpg" alt="product" />
       <h3>Product Name</h3>
       <p className="price">₹899</p>
-      <a href="#" className="buy-btn">View on Flipkart</a>
+      {/* <a href="#" className="buy-btn">View on Flipkart</a> */}
     </div>
   </div>
 </div>

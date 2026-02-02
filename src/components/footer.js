@@ -23,17 +23,17 @@ function Footer(){
 
     <div className="footer-col">
       <h4>Support</h4>
-      <a href="#">Help Center</a>
+      {/* <a href="#">Help Center</a>
       <a href="#">Affiliate Disclosure</a>
-      <a href="#">Privacy Policy</a>
+      <a href="#">Privacy Policy</a> */}
     </div>
 
-    <div className="footer-col">
+    {/* <div className="footer-col">
       <h4>Follow Us</h4>
       <a href="#">Instagram</a>
       <a href="#">Twitter</a>
       <a href="#">YouTube</a>
-    </div>
+    </div> */}
 
   </div>
 
