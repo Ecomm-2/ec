@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/sidebar.js";
 import Header  from "./components/header.js";
 import Fashionboys from "./pages/FashionBoys.js";
@@ -9,7 +9,7 @@ import Footer from "./components/footer.js";
 function App() {
 
   return(
-  <BrowserRouter>
+  <HashRouter>
     <Header />
     <Sidebar />
     <Routes>
@@ -22,7 +22,7 @@ function App() {
     </Routes>
       <Footer/>
 
-  </BrowserRouter>
+  </HashRouter>
   )
 }
 export default App;
