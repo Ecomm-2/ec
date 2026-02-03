@@ -23,11 +23,12 @@ export default function Sidebar() {
       <div className={`sidebar ${open ? "active" : ""}`}>
         <span className="close-btn" onClick={() => setOpen(false)}>×</span>
 
-        <Link to="/" className="sidebar-link">Home</Link>
-  <Link to="/products" className="sidebar-link">Products</Link>
-  <Link to="/categories" className="sidebar-link">Categories</Link>
-  <Link to="/contact" className="sidebar-link">Contact</Link>
-  <Link to="/help" className="sidebar-link">Help</Link> {/* new link */}
+        <Link to="/Fashion/Girls" className="sidebar-link">Female Clothes</Link>
+  <Link to="/Fashion/Boys" className="sidebar-link">Male clothes</Link>
+  <Link to="/Jewels" className="sidebar-link">Jewels</Link>
+  <Link to="/Watches" className="sidebar-link">Watches</Link>
+  <Link to="/About/US" className="sidebar-link">AboutUs</Link>
+  
       </div>
     </>
   );

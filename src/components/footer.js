@@ -16,13 +16,13 @@ function Footer(){
 
     <div className="footer-col">
       <h4>Quick Links</h4>
-      <a href="/">Home</a>
-      <a href="/products">Products</a>
-      <a href="/contact">Contact</a>
+      <a href="/">Jewels</a>
+      <a href="/products">Watches</a>
+      <a href="/contact">clothes</a>
     </div>
 
     <div className="footer-col">
-      <h4>Support</h4>
+      {/* <h4>Support</h4> */}
       {/* <a href="#">Help Center</a>
       <a href="#">Affiliate Disclosure</a>
       <a href="#">Privacy Policy</a> */}
